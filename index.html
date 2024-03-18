@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg" id="Navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ravel<span>H</span>ub</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#book">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#package">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- home section start -->
+      <div class="home">
+        <div class="content">
+          <h5>Welcome to <span>T</span>ravel<span>H</span>ub</h5>
+          <h1>Visit <span class="changecontent"></span></h1>
+          <p>Find yourself in travelling.</p>
+          <a href="#book">Book a place</a>
+        </div>
+      </div>
+      <!-- home section end -->
+
+      <!-- book section start -->
+      <section class="book" id="book">
+        <div class="container">
+          <div class="main-text">
+            <h1><span>B</span>ook</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-6 py-3 py-md-0">
+              <div class="card">
+                <img src="images/nature1.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-6 py-3 py-md-0">
+              <form action="#">
+                <input type="text" class="form-control" placeholder="Where to" required><br>
+                <input type="text" class="form-control" placeholder="How many" required><br>
+                <label for="date">Check-in</label><br>
+                <input type="date" class="form-control" placeholder="Arrival Date" required><br>
+                <label for="date">Check-out</label><br>
+                <input type="date" class="form-control" placeholder="Leaving Date" required><br>
+                <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea><br>
+                <input type="submit" value="Book Now" class="submit" required>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- book section end -->
+
+      <!-- packages section start -->
+      <section class="packages" id="package">
+        <div class="container">
+          <div class="main-txt">
+            <h1><span>P</span>ackages</h1>
+          </div>
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/nature.jpg" alt="">
+                <div class="card-body">
+                  <h3>Kerala</h3>
+                  <p> Known as "God's Own Country," Kerala boasts palm-fringed beaches, tranquil backwaters, and lush tea plantations. Visitors immerse themselves in Ayurvedic treatments, houseboat cruises along serene canals, and cultural experiences like Kathakali performances, all amidst the region's serene natural beauty.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>$200</strong></h6>
+                <a href="#book">Book now</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/manali.jpg" alt="">
+                <div class="card-body">
+                  <h3>Manali</h3>
+                  <p>Nestled in the Himalayas, Manali is a serene hill station renowned for its breathtaking landscapes, adventure sports, and vibrant culture. Visitors flock here for skiing in winter, trekking in summer, and exploring the quaint streets lined with charming cafes and handicraft shops.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>$200</strong></h6>
+                <a href="#book">Book now</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/goa.jpg" alt="">
+                <div class="card-body">
+                  <h3>Goa</h3>
+                  <p>Goa is India's party capital, renowned for its sandy beaches, vibrant nightlife, and Portuguese heritage. Travelers revel in water sports, beach parties, and exploring colonial architecture and spice plantations. Goa offers a unique blend of relaxation and excitement against a backdrop of swaying palms and azure waters.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>$200</strong></h6>
+                <a href="#book">Book now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/pondicherry.jpg" alt="">
+                <div class="card-body">
+                  <h3>Pondicherry</h3>
+                  <p>Pondicherry, or Puducherry, exudes a quaint French charm with its colonial architecture, cobblestone streets, and tranquil beaches. Visitors explore the vibrant French Quarter, indulge in delectable cuisine at chic cafes, and unwind with yoga and meditation by the sea, all in a laid-back, cosmopolitan atmosphere.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>$200</strong></h6>
+                <a href="#book">Book now</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/coorg.jpg" alt="">
+                <div class="card-body">
+                  <h3>Coorg</h3>
+                  <p>Often called the "Scotland of India," Coorg is a lush green district in Karnataka famed for its misty hills, coffee plantations, and rich biodiversity. Travelers indulge in activities like hiking through dense forests, sipping freshly brewed coffee, and unwinding amidst picturesque valleys.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>$200</strong></h6>
+                <a href="#book">Book now</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="images/araku.jpg" alt="">
+                <div class="card-body">
+                  <h3>Araku</h3>
+                  <p>Tucked away in the Eastern Ghats, Araku Valley is a hidden gem offering stunning landscapes, tribal culture, and aromatic coffee plantations. Travelers embark on scenic train rides through verdant valleys, trek to cascading waterfalls, and immerse themselves in the rich tribal heritage of the region.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>$200</strong></h6>
+                <a href="#book">Book now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+        </div>
+      </section>
+      <!-- packages section end -->
+
+      <!-- services section start -->
+      <section class="services" id="services">
+        <div class="container">
+
+          <div class="main-txt">
+            <h1><span>S</span>ervices</h1>
+          </div>
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <i class="fas fa-hotel"></i>
+                <div class="card-body">
+                  <h3>Affordable Hotel</h3>
+                  <p>budget-conscious travelers can find comfortable accommodation options without compromising on quality. Our handpicked selection ensures affordability without sacrificing amenities or service. From cozy guesthouses to well-appointed budget hotels, explore our diverse range of options to make the most of your travel budget. Book now and enjoy a wallet-friendly stay without compromising on comfort or convenience.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <i class="fas fa-utensils"></i>
+                <div class="card-body">
+                  <h3>Food & Drinks</h3>
+                  <p>Indulge your taste buds with our exquisite selection of foods and drinks! Whether you're craving local delicacies, international flavors, or refreshing beverages, we have something to satisfy every palate. From hearty breakfast options to gourmet dinners, and from freshly brewed coffee to artisanal cocktails, our diverse menu ensures a culinary experience that delights and surprises. Bon appétit!</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <i class="fas fa-bullhorn"></i>
+                <div class="card-body">
+                  <h3>Safety Guide</h3>
+                  <p>Stay safe with our comprehensive safety guide! Whether you're traveling solo or with family, your well-being is our top priority. Learn essential tips for navigating unfamiliar environments, securing your belongings, and staying vigilant against potential risks. From emergency contacts to health precautions, arm yourself with the knowledge to enjoy a worry-free journey. Explore our safety guide now and embark on your travels with confidence.</p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <i class="fas fa-globe-asia"></i>
+                <div class="card-body">
+                  <h3>Around the world</h3>
+                  <p>Embark on a global adventure with our 'Around the World' guide! Discover fascinating destinations, cultural insights, and insider tips to make the most of your travels. From iconic landmarks to hidden gems, delve into diverse landscapes, cuisines, and experiences that await you across continents. Start your journey of exploration today!</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <i class="fas fa-plane"></i>
+                <div class="card-body">
+                  <h3>Fastest Travel</h3>
+                  <p>Unlock the secrets of fast travel with our expert tips and insights! Whether you're a frequent flyer or an adventurer seeking rapid transit, discover the fastest routes, modes of transportation, and time-saving hacks to reach your destination in record time. From high-speed trains to efficient air travel, optimize your journey for speed and efficiency. Explore our guide to fast travel and streamline your adventures today!</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <i class="fas fa-hiking"></i>
+                <div class="card-body">
+                  <h3>Adventures</h3>
+                  <p>Embrace adrenaline-fueled adventures with our ultimate guide! From scaling towering peaks to diving into the depths of the ocean, ignite your spirit of exploration and discover thrilling experiences around the globe. Whether you seek skydiving thrills, epic treks, or heart-pounding water sports, embark on a journey of excitement and discovery. Let's make unforgettable memories together – adventure awaits!</p>
+                  
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          
+        </div>
+      </section>
+      <!-- services section end -->
+
+
+
+      <!-- section gallery start -->
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="main-txt">
+            <h1><span>G</span>allery</h1>
+          </div>
+
+          <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/s1.jpg" alt="" height="230px">
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/s2.jpg" alt="" height="230px">
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/s3.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/s4.jpg" alt="" height="230px">
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/s5.jpg" alt="" height="230px">
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="images/s6.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      </section>
+      <!-- section gallery end -->
+
+      <!-- about section start -->
+      <section class="about" id="about">
+        <div class="container">
+
+          <div class="main-txt">
+            <h1>About <span>Us</span></h1>
+          </div>
+
+          <div class="row" style="margin-top: 50px;">
+          <div class="col-md-6 py-3 py-md-0">
+              <div class="card">
+                <img src="images/s7.jpg" alt="">
+              </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>How Travel Agency Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo inventore vel debitis nam suscipit, itaque labore culpa, distinctio adipisci, repellendus consectetur officiis ea magnam nesciunt repellat corrupti minima impedit quo!</p>
+            <button id="about-btn">Read more...</button>
+          </div>
+
+        </div>
+        </div>
+      </section>
+      <!-- about section end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
